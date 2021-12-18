@@ -8,7 +8,7 @@ app.use(cors());
 app.use(express.json());
 
 mongoose.connect(
-  "mongodb+srv://erez:es686865@crud.rltvh.mongodb.net/list?retryWrites=true&w=majority",
+  "mongodb+srv://erez:process.env.MONGO_PASSWORD@crud.rltvh.mongodb.net/list?retryWrites=true&w=majority",
   {
     useNewUrlParser: true,
   }
